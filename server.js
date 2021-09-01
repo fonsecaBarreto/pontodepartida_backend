@@ -10,6 +10,10 @@ const PORT = process.env.NODE_ENV || 9000
 app.get("/test", (req, res)=>{
     return res.json("okok")
 })
+
+app.get("/api/test", (req, res)=>{
+    return res.json("teste de api")
+})
 app.listen(PORT, ()=>{
     console.log("Running on ", PORT)
 })
